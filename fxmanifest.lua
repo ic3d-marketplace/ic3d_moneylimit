@@ -1,23 +1,10 @@
 fx_version 'cerulean'
 game 'gta5'
-description 'IC3D'
 lua54 'yes'
-
-
-shared_scripts {
-'@es_extended/imports.lua'
-}
-
-
-server_scripts {
-"server.lua",
-"@mysql-async/lib/MySQL.lua"
-}
-
-client_scripts {
-"client.lua"
-}
-
-dependencies {
-	'es_extended',
-}
+author 'ic3d_'
+discord 'https://discord.gg/3h2WpSH7Sg'
+description 'Money Limit by ic3d_'
+version '1.0.0'
+client_script {'client/main.lua'}
+server_scripts {'server/main.lua'}
+shared_script {'config/shared.lua','@ox_lib/init.lua',}
